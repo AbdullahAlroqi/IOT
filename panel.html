@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Control panel</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+</head>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+ 
+<body>
+
+<ul class="ti">
+<h1 style="text-align: center;">ARM Control Panel</h1> 
+</ul>
+<form action="acc_panel.php" method="post">
+
+<ul class="arm">
+<div class="w3-container">
+
+
+	<h3>Turn on and off</h3>
+<p>
+  <button class="w3-btn w3-ripple w3-blue" style="margin-left: 20px;" onclick="message();" name="on">On</button>
+  <button class="w3-btn w3-ripple w3-blue"style="margin-left: 20px;" onclick="message();" name="off">Off</button>
+
+</p>
+</div>
+
+<br><br> 
+
+	<label for="range1">Arm 1</label>
+	<input id="range1" name="range1" type="range" min="0" max="90" value="50">
+	<label for="range2">Arm2</label>
+	<input id="range2" name="range2" type="range" min="0" max="90" value="50">
+	<label for="range3">Arm3</label>
+	<input id="range3" name="range3" type="range" min="0" max="90" value="50">
+	<label for="range4">Arm 4</label>
+	<input id="range4" name="range4" type="range" min="0" max="90" value="50">
+	<label for="range5">Arm5</label>
+	<input id="range5" name="range5" type="range" min="0" max="90" value="50">
+	<label for="range6">Arm6</label>
+	<input id="range6" name="range6" type="range" min="0" max="90" value="50">
+	<br><br>
+
+	<div class="w3-container">
+
+
+<p>
+  <button class="w3-btn w3-ripple w3-blue" style=" margin-left: 50px;" onclick="message();" name="Send">Send</button>
+
+</p>
+</ul>
+
+
+
+</div>
+
+</form>
+
+ <script src="script.js"></script> 
+ <script>
+
+function message() {
+  alert("done");
+}
+
+ </script>
+</body>
+</html>
